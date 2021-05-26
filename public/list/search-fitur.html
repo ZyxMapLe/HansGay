@@ -1,0 +1,450 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <script data-ad-client="ca-pub-8640399148235153" async src="../pagead/js/adsbygoogle.js"></script>
+    <script async src="../pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="../npm/bootstrap-icons_1-4-1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../ajax/libs/izitoast/1-4-0/css/izitoast.css" />
+    <script src="../cdn/justpiple/asset/master/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="../cdn/justpiple/asset/master/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <link href="../npm/_sweetalert2/theme-dark_4/dark.css" rel="stylesheet">
+   <script src="../npm/sweetalert2_10/dist/sweetalert2.min.js"></script>
+    <title>ZEKS API - List</title>
+    <!-- plugins:css -->
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/vendors/mdi/css/materialdesignicons.min.css">
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/vendors/jvectormap/jquery-jvectormap.css">
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/css/style.css">
+    <link  rel="stylesheet" type="text/css"href="../cdn/justpiple/asset/master/css/custom.css">
+    <!-- End layout styles -->
+    <script src="../ajax/libs/izitoast/1-4-0/js/izitoast.js" ></script>
+    <script src="../ajax/libs/smooth-scrollbar/8-6-1/smooth-scrollbar.min.js" ></script>
+    <script src="../npm/sweetalert2_7-12-15/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="../ajax/libs/qs/6-9-2/qs.min.js"
+      ></script>
+  <meta name="description" content="A FREE API">
+  <meta property="og:image" content="../logo.jpg">
+  <meta property="og:site_name" content="ZEKS API">
+  <meta property="og:url" content="https://api.zeks.xyz">
+  <meta name="keywords" content="FREE API">
+  <meta name="author" content="ZeksTeam">
+  </head>
+  <body>
+      <div id="preloader">
+        <div class="loader"></div>
+    </div>
+        <div class="container-scroller" id="scrollers">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <center class="sidebar-brand brand-logo" alt="logo" style="color: white;">zeks api</center>
+          <span class="sidebar-brand brand-logo-mini" alt="logo" style="color: white;">Z</span>
+        </div>
+        <ul class="nav"> 
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items" id="index">
+            <a class="nav-link" href="../index.html">
+              <span class="menu-icon">
+                <i class="bi bi-slash-square"></i>
+              </span>
+              <span class="menu-title">Index</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+           <li class="nav-item menu-items" id="chat">
+            <a class="nav-link" href="../beta-chat-app.html">
+              <span class="menu-icon">
+                <i class="bi bi-chat-left-dots"></i>
+              </span>
+              <span class="menu-title">Chat (Beta)</span>
+            </a>
+          </li> 
+       <li class="nav-item menu-items" id="downloader">
+            <a class="nav-link" href="../list/downloader.html">
+              <span class="menu-icon">
+                <i class="bi bi-download"></i>
+              </span>
+              <span class="menu-title">Downloader</span>
+            </a>
+          </li><li class="nav-item menu-items" id="random">
+            <a class="nav-link" href="../list/random.html">
+              <span class="menu-icon">
+                <i class="bi bi-arrow-clockwise"></i>
+              </span>
+              <span class="menu-title">Random</span>
+            </a>
+          </li><li class="nav-item menu-items" id="news">
+            <a class="nav-link" href="../list/news.html">
+              <span class="menu-icon">
+                <i class="bi bi-newspaper"></i>
+              </span>
+              <span class="menu-title">News</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="imaker">
+            <a class="nav-link" href="../list/imaker.html">
+              <span class="menu-icon">
+                <i class="bi bi-card-image"></i>
+              </span>
+              <span class="menu-title">Image Maker</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="search-fitur">
+            <a class="nav-link" href="../list/search-fitur.html">
+              <span class="menu-icon">
+                <i class="bi bi-search"></i>
+              </span>
+              <span class="menu-title">Searching</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="kuis">
+            <a class="nav-link" href="../list/kuis.html">
+              <span class="menu-icon">
+                <i class="bi bi-card-checklist"></i>
+              </span>
+              <span class="menu-title">Kuis</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="primbon">
+            <a class="nav-link" href="../list/primbon.html">
+              <span class="menu-icon">
+                <i class="bi bi-bookmark-star"></i>
+              </span>
+              <span class="menu-title">primbon</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="other">
+            <a class="nav-link" href="../index.html">
+              <span class="menu-icon">
+                <i class="bi bi-plus-circle"></i>
+              </span>
+              <span class="menu-title">Other</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Contact Me</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" target="_blank"  href="https://t.me/justpiple" target="_blank">
+              <span class="menu-icon">
+                <i class="bi bi-telegram"></i>
+              </span>
+              <span class="menu-title">Telegram</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" target="_blank"  href="http://wa.me/62813309603730" target="_blank">
+              <span class="menu-icon">
+                <i class="bi bi-whatsapp"></i>
+              </span>
+              <span class="menu-title">Whatsapp</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+        <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <span class="navbar-brand brand-logo-mini" alt="logo" style="color: white;">Z</span>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button> 
+            <ul class="navbar-nav w-100">
+            </ul>
+            <ul class="navbar-nav navbar-nav-right"> 
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-search"></i>
+                </a>
+                <div class="dropdown-menu dropdown-search navbar-dropdown" aria-labelledby="messageDropdown">
+                    <div class="dropdown-item preview-item">
+                     <form  class="dropdown-search" action="../index.html" method="GET">
+                                        <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                <button class="input-group-text" type="submit">
+                                              <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" name="q" placeholder="Search" autocomplete="off" required="">
+                                        </div>
+                                    </form>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <a class="dropdown-item preview-item">
+                 <h6 class="p-3 mb-0">Notifications</h6>
+                   <p class="text-muted ellipsis mb-0"> All Notifications will show here</p>
+                   </a>
+                   <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                    <div class="text-muted ellipsis mb-0">
+                      No Notifications</p>
+                    </div>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <i class="mdi mdi-account"> </i>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Guest</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                      <div class="user-box">
+                          <div class="u-text">
+                      <h4>Guest</h4>
+                          </div>
+               </div>
+                  <div class="dropdown-divider"></div>
+                      <a class="dropdown-item p-3 mb-0 text-center" href="../index.html">Login</a>
+                       <div class="dropdown-divider"></div>
+                      <a class="dropdown-item p-3 mb-0 text-center" href="../index.html">Register</a>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 mb-4">
+              <!-- Simple Tables -->
+              <div class="card">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">API List</h6>
+                </div>
+                <div class="table-responsive">
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-black">
+                      <tr>
+                        <th class="font-weight-bold">NAME</th>
+                        <th class="font-weight-bold">METHOD</th>
+                        <th class="font-weight-bold">STATUS</th>
+                        <th class="font-weight-bold">TRY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Google Play</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Sticker Whatsapp</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>WikiPedia</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Film</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Film V2</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Baca komik</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Happy Mod</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Instagram User</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>APK Pure</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>KBBI</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Neonime</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Youtube Search</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Shopee Search</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Instagram Stalk</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Masak apa</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Brainly</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Spotify</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Gsm Arena</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Gsm Arena Search</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Identify Music</td>
+                        <td><div class="icon icon-box-info">GET / POST</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Google Image</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Pinterest Image</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Youtube Search Channel</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                      <tr>
+                        <td>Youtube Search Playlist</td>
+                        <td><div class="icon icon-box-info">GET</div></td>
+                        <td><div class="badge badge-outline-success">ONLINE</div></td>
+                        <td><a target="_blank" href="../index.html" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+                <div class="float-none float-sm-right d-block mt-1 mt-sm-0 text-right">
+                    Made with <i class="bi bi-laptop"></i> by
+                    <a href="https://t.me/justpipel" target="_blank" rel="nofollow">Ben.</a>
+                </div>
+            </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <script>
+    function deletenotif(username){
+    $.ajax({
+                    url: '/deletenotif?'+username,
+                    type: 'POST',
+                    success: async function(data, textStatus, jqXHR) {
+                   location = location.href
+                }
+    })
+}
+    </script>
+         <script src="../cdn/justpiple/asset/master/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../cdn/justpiple/asset/master/vendors/chart-js/chart.min.js"></script>
+    <script src="../cdn/justpiple/asset/master/vendors/progressbar-js/progressbar.min.js"></script>
+    <script src="../cdn/justpiple/asset/master/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/off-canvas.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/hoverable-collapse.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/misc.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/settings.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/todolist.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/dashboard.js"></script>
+    <script src="../cdn/justpiple/asset/master/js/main.js"></script>
+  </body>
+</html>

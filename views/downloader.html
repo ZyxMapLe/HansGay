@@ -1,0 +1,353 @@
+<!-- Coded By Ojan Ganz --> 
+<!-- Lawak View Source? -->
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <script data-ad-client="ca-pub-8640399148235153" async src="pagead/js/adsbygoogle.js"></script>
+    <script async src="pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="npm/bootstrap-icons_1-4-1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ajax/libs/izitoast/1-4-0/css/izitoast.css" />
+    <script src="cdn/ojan/asset/master/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="cdn/ojan/asset/master/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <link href="npm/_sweetalert2/theme-dark_4/dark.css" rel="stylesheet">
+   <script src="npm/sweetalert2_10/dist/sweetalert2.min.js"></script>
+    <title>JAN API</title>
+    <!-- plugins:css -->
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/vendors/mdi/css/materialdesignicons.min.css">
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/vendors/jvectormap/jquery-jvectormap.css">
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/css/style.css">
+    <link  rel="stylesheet" type="text/css"href="cdn/ojan/asset/master/css/custom.css">
+    <!-- End layout styles -->
+    <script src="ajax/libs/izitoast/1-4-0/js/izitoast.js" ></script>
+    <script src="ajax/libs/smooth-scrollbar/8-6-1/smooth-scrollbar.min.js" ></script>
+    <script src="npm/sweetalert2_7-12-15/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="ajax/libs/qs/6-9-2/qs.min.js"
+      ></script>
+  <meta name="description" content="JAN - API">
+  <meta property="og:image" content="https://i.ibb.co/gjbZGxy/IMG-20210521-WA0673.png">
+  <meta property="og:site_name" content="JANs API">
+  <meta name="keywords" content="REST API">
+  <meta name="author" content="OjanHaxor">
+  </head>
+  <body>
+  <body id="page-top" onload="getvisitor();">
+      <div id="preloader">
+        <div class="loader"></div>
+    </div>
+        <div class="container-scroller" id="scrollers">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <center class="sidebar-brand brand-logo" alt="logo" style="color: white;">ojan api</center>
+          <span class="sidebar-brand brand-logo-mini" alt="logo" style="color: white;">Z</span>
+        </div>
+        
+        <ul class="nav"> 
+          <li class="nav-item nav-category">
+            <span class="nav-link">DOCUMENTASI</span>
+          </li>
+          <li class="nav-item menu-items" id="index">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="bi bi-slash-square"></i>
+              </span>
+              <span class="menu-title">Home</span>
+            </a>
+          </li>
+           <li class="nav-item menu-items" id="chat">
+            <a class="nav-link" href="/photooxy">
+              <span class="menu-icon">
+                <i class="bi bi-camera"></i>
+              </span>
+              <span class="menu-title">Photooxy</span>
+            </a>
+          </li> 
+          <li class="nav-item menu-items" id="chat">
+          <a class="nav-link" href="/encrypt">
+          <span class="menu-icon">
+          <i class="bi bi-lock"></i>
+          </span>
+          <span class="menu-title">Encrypt Menu</span>
+          </a>
+          </li> 
+       <li class="nav-item menu-items" id="downloader">
+            <a class="nav-link" href="/downloader">
+              <span class="menu-icon">
+                <i class="bi bi-download"></i>
+              </span>
+              <span class="menu-title">Downloader</span>
+            </a>
+          </li><li class="nav-item menu-items" id="random">
+            <a class="nav-link" href="/random">
+              <span class="menu-icon">
+                <i class="bi bi-arrow-clockwise"></i>
+              </span>
+              <span class="menu-title">Random</span>
+            </a>
+          </li><li class="nav-item menu-items" id="news">
+            <a class="nav-link" href="/tools">
+              <span class="menu-icon">
+                <i class="bi bi-tools"></i>
+              </span>
+              <span class="menu-title">Tools</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="imaker">
+            <a class="nav-link" href="/image">
+              <span class="menu-icon">
+                <i class="bi bi-card-image"></i>
+              </span>
+              <span class="menu-title">Image Maker</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="search-fitur">
+            <a class="nav-link" href="/islam">
+              <span class="menu-icon">
+                <i class="bi bi-star"></i>
+              </span>
+              <span class="menu-title">Islamic</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="kuis">
+            <a class="nav-link" href="/fun">
+              <span class="menu-icon">
+                <i class="bi bi-book"></i>
+              </span>
+              <span class="menu-title">Fun</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="primbon">
+            <a class="nav-link" href="/serti">
+              <span class="menu-icon">
+                <i class="bi bi-images"></i>
+              </span>
+              <span class="menu-title">Sertifikat</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items" id="other">
+            <a class="nav-link" href="/other">
+              <span class="menu-icon">
+                <i class="bi bi-plus-circle"></i>
+              </span>
+              <span class="menu-title">Other</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+          <i class="bi bi-tools"></i>
+          </span>
+          <span class="menu-title">MENU LAINNYA</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/game">GAME</a></li>
+          <li class="nav-item"> <a class="nav-link" href="https://wa.me/6289666262976">COSTUM APIKEY</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Contact Me</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" target="_blank"  href="https://youtube.com/c/FauzanPerfect" target="_blank">
+              <span class="menu-icon">
+                <i class="bi bi-youtube"></i>
+              </span>
+              <span class="menu-title">Youtube</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" target="_blank"  href="http://wa.me/6289666262976" target="_blank">
+              <span class="menu-icon">
+                <i class="bi bi-whatsapp"></i>
+              </span>
+              <span class="menu-title">Whatsapp</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" target="_blank"  href="https://trakteer.id/ojanxsec" target="_blank">
+          <span class="menu-icon">
+          <i class="bi bi-share"></i>
+          </span>
+          <span class="menu-title">Donasi</span>
+          </a>
+          </li>
+        </ul>
+      </nav>
+        <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <span class="navbar-brand brand-logo-mini" alt="logo" style="color: blue;">JAN - API</span>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button> 
+            <ul class="navbar-nav w-100">
+            </ul>
+            <ul class="navbar-nav navbar-nav-right"> 
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-search"></i>
+                </a>
+                <div class="dropdown-menu dropdown-search navbar-dropdown" aria-labelledby="messageDropdown">
+                    <div class="dropdown-item preview-item">
+                     <form  class="dropdown-search" action="#" method="GET">
+                                        <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                <button class="input-group-text" type="submit">
+                                              <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" name="q" placeholder="Search" autocomplete="off" required="">
+                                        </div>
+                                    </form>
+                    </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <a class="dropdown-item preview-item">
+                 <h6 class="p-3 mb-0">Notifikasi</h6>
+                   <p class="text-muted ellipsis mb-0"> Notifikasi Jan - Api</p>
+                   </a>
+                   <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                    <div class="text-muted ellipsis mb-0">
+                       Blum Ada notif :/</p>
+                    </div>
+                  </a>
+              </li>
+              
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+       <!-- partial -->
+       <div class="main-panel">
+       <div class="content-wrapper">
+       <div class="row">
+       <div class="col-lg-12 mb-4">
+       <!-- Simple Tables -->
+       <div class="card">
+       <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+       <h6 class="m-0 font-weight-bold text-primary">API List</h6>
+       </div>
+       <div class="table-responsive">
+       <table class="table align-items-center table-flush">
+       <thead class="thead-black">
+       <tr>
+       <th class="font-weight-bold">NAME</th>
+       <th class="font-weight-bold">METHOD</th>
+       <th class="font-weight-bold">STATUS</th>
+       <th class="font-weight-bold">ACTION</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td>Ytmp4 Downloader</td>
+       <td><div class="icon icon-box-info">GET</div></td>
+       <td><div class="badge badge-outline-success">ONLINE</div></td>
+       <td><a target="_blank" href="api/yutub/video?url=URL&apikey=APIKEY" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+       </tr>
+       <tr>
+       <td>Ytmp3 Downloader</td>
+       <td><div class="icon icon-box-info">GET</div></td>
+       <td><div class="badge badge-outline-success">ONLINE</div></td>
+       <td><a target="_blank" href="api/yutub/audio?url=URL&apikey=APIKEY" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+       </tr>
+       <tr>
+       	    <td>Instagram Downloader</td>
+       	    <td><div class="icon icon-box-info">GET</div></td>
+       	    <td><div class="badge badge-outline-success">ONLINE</div></td>
+              <td><a target="_blank"href="api/instagram?apikey=APIKEY&url=URL" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+              </tr>
+              <tr>
+              <td>Tik Tok Downloader</td>
+              <td><div class="icon icon-box-info">GET</div></td>
+              <td><div class="badge badge-outline-success">ONLINE</div></td>
+             <td><a target="_blank" href="api/tiktod/?url=URL&apikey=APIKEY" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+             </tr>
+             <tr>
+             <td>Youtube Search</td>
+             <td><div class="icon icon-box-info">GET</div></td>
+             <td><div class="badge badge-outline-success">ONLINE</div></td>
+            <td><a target="_blank" href="api/yutub/search?video=Fauzan Perfe&apikey=APIKEY" class="btn btn-sm btn-primary"><i class="bi bi-box-arrow-in-up-right"></a></td>
+            </tr>
+            <tr>
+            
+       </tbody>
+       </table>
+       </div>
+       <div class="card-footer"></div>
+       </div>
+       </div>
+       </div>
+       </div>
+<script>
+function toast(){
+}
+window.setTimeout("waktu()", 1000);
+    function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        let strings = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`
+        document.getElementById("jam").textContent = strings
+    }
+</script>
+          </div>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <script>
+    </script>
+    <script>
+    function getvisitor(){
+    var xhr = new XMLHttpRequest();
+    var url = 'https://api.countapi.xyz/hit/janbot-api.herokuapp.com/visits';
+    xhr.onloadend = function(){
+    data = JSON.parse(this.responseText);
+    document.getElementById("visitor").textContent = data.value
+    };
+    xhr.open("GET", url, true);
+    xhr.send();
+    }
+    </script>
+         <script src="cdn/ojan/asset/master/vendors/js/vendor.bundle.base.js"></script>
+    <script src="cdn/ojan/asset/master/vendors/chart-js/chart.min.js"></script>
+    <script src="cdn/ojan/asset/master/vendors/progressbar-js/progressbar.min.js"></script>
+    <script src="cdn/ojan/asset/master/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="cdn/ojan/asset/master/js/off-canvas.js"></script>
+    <script src="cdn/ojan/asset/master/js/hoverable-collapse.js"></script>
+    <script src="cdn/ojan/asset/master/js/misc.js"></script>
+    <script src="cdn/ojan/asset/master/js/settings.js"></script>
+    <script src="cdn/ojan/asset/master/js/todolist.js"></script>
+    <script src="cdn/ojan/asset/master/js/dashboard.js"></script>
+    <script src="cdn/ojan/asset/master/js/main.js"></script>
+    <script src="cdn/ojan/asset/master/js/ojan.js"></script>
+  <center><font size="2">Made With   ❤️<a href="https://wa.me/6289666262976"> OjanXSec</a></font></center></body>
+</html>

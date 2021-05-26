@@ -1,0 +1,49 @@
+.frames {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.frames:hover {
+  transform: scale(1.2);
+}
+.imgtexts {		
+		width: 140px;
+		height: 140px;
+		padding: 50px 15px 0 15px;
+		opacity: 0;
+		position: absolute;
+		bottom: 2px;
+		-webkit-transition: all 0.8s ease-in-out;
+		-o-transition: all 0.8s ease-in-out;
+		transition: all 0.8s ease-in-out;
+    cursor:pointer;
+}
+.imgtexts:hover {
+		-webkit-opacity: 40;
+		opacity: 40;
+}
+.imgtexts p {
+		margin: 0;
+		padding: 0;
+}
+.photos {
+  object-fit: cover;
+  object-position: center top;
+  width: 150px;
+  height: 150px;
+  cursor:pointer;
+  transition: all 1s ease;
+  
+}
+.photos:hover {
+  background-color: transparent;
+  opacity: 1;
+  
+}
+
